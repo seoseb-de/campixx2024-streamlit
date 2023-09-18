@@ -42,6 +42,7 @@ with st.container():
 
     with col_1:
         st.subheader('Intro')
+        st.markdown('![@campixx](https://www.campixx.de/wp-content/uploads/2021/10/campixx-logo-2023-3.png')
                
     with col_2:
         st.subheader('Examples')
@@ -53,6 +54,7 @@ with st.container():
     
     st.markdown('Campixx 2021 🇩🇪')
     st.markdown('''
+    - [Speaker-Profil](https://www.campixx.de/speaker/sebastian-adler/)
     - [Xpath für SEO](https://www.seoseb.de/artikel/texte/xpath-fur-seo-ein-einstieg)
     ''')
 
