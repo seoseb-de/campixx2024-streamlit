@@ -11,7 +11,7 @@ import streamlit as st
 ###########################################
 
 st.set_page_config(
-    page_title='Campixx 2024 - Streamlit Examples',
+    page_title='Campixx 2024',
     page_icon='https://www.seoseb.de/artikel/media/files/favicon-16.png',
     layout='centered',
     initial_sidebar_state='expanded'
@@ -33,7 +33,7 @@ with st.sidebar:
 # layout the app #
 ##################
 
-st.title('![@seoseb](https://www.seoseb.de/img/seoseb_icon_x48.png) Seoseb SEO Tools')
+st.title('![@seoseb](https://www.seoseb.de/img/seoseb_icon_x48.png) Campixx 2024')
 st.markdown('Stuff going here')
 
 with st.container():
@@ -51,11 +51,9 @@ with st.container():
 
 with st.container():
     
-    st.markdown('I also do other things. Maybe you want to head over to my website 🇩🇪')
+    st.markdown('Campixx 2021 🇩🇪')
     st.markdown('''
     - [Xpath für SEO](https://www.seoseb.de/artikel/texte/xpath-fur-seo-ein-einstieg)
-    - [Sitemap Monitor mit GSheets & DataStudio](https://www.seoseb.de/artikel/texte/sitemap-monitor-mit-google-apps-script-data-studio)
-    - [Page Speed Monitoring mit GSheets](https://www.seoseb.de/artikel/texte/pagespeed-monitoring-mit-der-psi-api)
     ''')
 
 ##########
