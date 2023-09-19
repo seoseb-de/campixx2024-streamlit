@@ -34,7 +34,9 @@ crawl_csv =  st.file_uploader(label=':frog: Crawl-Export hochladen', type='csv',
 if crawl_csv is not None:
     # read csv to pandas dataframe
     crawl_df = pd.read_csv(crawl_csv)
-    st.write(crawl_df.sort_values('Adresse',key=lambda x:x.str.len()))
+
+    status_code_list = crawl_df['Status-Code'].unique().tolist()
+    status_code_selection = [200, 301, 302, 304, 403, 404, 410, 500, 503]
 
     status_chart = alt.Chart(crawl_df, title = 'Verteilung der Status-Codes').mark_bar().encode(
         x = 'Status-Code:O',
@@ -85,32 +87,53 @@ if crawl_csv is not None:
         height = 400
     )
 
-    with st.container():
-        col_1, col_2, col_3  = st.columns(3, gap='medium')
+    with st.expander('Crawldaten ansehen', expanded=False):
 
-    with col_1:
-        st.subheader('Status Code Verteilung')
-        st.altair_chart(status_chart, theme=None, use_container_width=True)
+        selectet_status = st.multiselect('Grenze Status Codes ein:', status_code_selection, status_code_selection)
+        status_code_mask = crawl_df['Status-Code'].isin(selectet_status)
 
-    with col_2:
-        st.subheader('Title Länge')
-        st.altair_chart(title_length_chart, use_container_width=True)
+        st.dataframe(crawl_df.sort_values('Adresse',key=lambda x:x.str.len())[status_code_mask])
 
-    with col_3:
-        st.subheader('Description Länge')
-        st.altair_chart(description_length_chart, use_container_width=True)
+    meta_tab, url_tab, performance_tab =  st.tabs(['Metadaten', 'URL Infos', 'Performance'])
 
-    with st.container():
-        col_1, col_2, col_3  = st.columns(3, gap='large')
+    with meta_tab:
+        with st.container():
+            col_1, col_2 = st.columns(2, gap='small')
 
-    with col_1:
-        st.subheader('PSI Score Verteilung')
-        st.altair_chart(psi_score_verteilung, use_container_width=True)
+            with col_1:
 
-    with col_2:
-        st.subheader('Perf_Scatter')
-        st.altair_chart(performance_scatter, use_container_width=True)
+                st.subheader('Title Länge')
+                st.altair_chart(title_length_chart, use_container_width=True)
 
-    with col_3:
-        st.subheader('Linkpower-Verteilung')
-        st.altair_chart(inlink_verteilung_chart, use_container_width=True)
+            with col_2:
+
+                st.subheader('Description Länge')
+                st.altair_chart(description_length_chart, use_container_width=True)
+
+    with url_tab:
+        with st.container():
+            col_1, col_2 = st.columns(2, gap='small')
+
+            with col_1:
+                st.subheader('Linkpower-Verteilung')
+                st.altair_chart(inlink_verteilung_chart, use_container_width=True)
+
+            with col_2:
+                st.subheader('Status Code Verteilung')
+                st.altair_chart(status_chart, theme=None, use_container_width=True)
+
+    with performance_tab:
+
+
+        with st.container():
+            col_1, col_2 = st.columns(2, gap='small')
+
+            with col_1:
+                st.subheader('PSI Score Verteilung')
+                st.altair_chart(psi_score_verteilung, use_container_width=True)
+
+            with col_2:
+                st.subheader('Perf_Scatter')
+                st.altair_chart(performance_scatter, use_container_width=True)
+
+
