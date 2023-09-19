@@ -33,7 +33,7 @@ with st.sidebar:
 # layout the app #
 ##################
 
-st.title('![@seoseb](https://www.seoseb.de/img/seoseb_icon_x48.png) Campixx 2024')
+st.title('![@seoseb](https://www.seoseb.de/img/seoseb_icon_x48.png) Vorraussetzungen')
 st.markdown('Stuff going here')
 
 with st.container():
@@ -41,12 +41,12 @@ with st.container():
     col_1, col_2 = st.columns(2, gap='large')
 
     with col_1:
-        st.subheader('Intro')
-        st.image('./assets/campixx-logo-2023-3.png', caption='Campixx Logo', width=150)
+        st.subheader('Anaconda :snake:')
+        st.image('https://upload.wikimedia.org/wikipedia/en/c/cd/Anaconda_Logo.png', use_column_width=True)
                
     with col_2:
-        st.subheader('Examples')
-        
+        st.subheader('Streamlit :balloon:')
+        st.image('https://streamlit.io/images/brand/streamlit-mark-color.png', use_column_width=True)
 
     st.markdown('---')
 
