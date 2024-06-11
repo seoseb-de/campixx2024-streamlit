@@ -149,7 +149,7 @@ if crawl_csv is not None:
                 
                 title_limit = st.slider('Ab wann sind Titles zu breit?', 0, max_title_px, value = 512, format = '%d px', help = 'das Empfohlene Maximum liegt bei 512 px.')
 
-                title_data = crawl_df[(crawl_df['Status-Code'] == 200) & (crawl_df['Pixelbreite von Titel 1'] > title_limit )][['Pixelbreite von Titel 1', 'Titel 1', 'Adresse']].astype({'Pixelbreite von Titel 1': 'int32'}).sort_values(by=['Pixelbreite von Titel 1'], ascending = False)
+                title_data = crawl_df[(crawl_df['Status-Code'] == 200) & (crawl_df['Pixelbreite von Titel 1'] > title_limit )][['Pixelbreite von Titel 1', 'Titel 1', 'Adresse']].sort_values(by=['Pixelbreite von Titel 1'], ascending = False)
 
                 title_data.dtypes
 
