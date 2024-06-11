@@ -171,7 +171,7 @@ if crawl_csv is not None:
 
                 max_description_px = crawl_df[crawl_df['Status-Code'] == 200]['Pixelbreite von Meta Description 1'].max()
                 
-                description_limit = st.slider('Ab wann sind Descriptions zu breit?', 0, max_description_px, value = 912, format = '%d px', help = 'das Empfohlene Maximum liegt bei 920 px.')
+                description_limit = st.slider('Ab wann sind Descriptions zu breit?', 0, max_description_px, value = 920, format = '%d px', help = 'das Empfohlene Maximum liegt bei 920 px.')
 
                 description_data = crawl_df[(crawl_df['Status-Code'] == 200) & (crawl_df['Pixelbreite von Meta Description 1'] > description_limit )][['Pixelbreite von Meta Description 1', 'Meta Description 1', 'Adresse']].sort_values(by=['Pixelbreite von Meta Description 1'], ascending = False)
                 
