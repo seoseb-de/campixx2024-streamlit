@@ -49,14 +49,14 @@ max_co2 = df_co2['CO₂ (mg)'].max()
 min_co2 = 0
 
 st.dataframe(df_co2, column_config={
-                        "CO₂ (mg)": st.column_config.ProgressColumn("Performance Score",  
-                                                                 help="Pagespeed Insights Performance Score auf der Skala von 0-100",
+                        "CO₂ (mg)": st.column_config.ProgressColumn("CO₂ Footprint",  
+                                                                 help="CO₂ Footprint der URL - errechnet vom Screaming Frog",
                                                                  format="%d mg",
                                                                  min_value=min_co2,
                                                                  max_value=max_co2),
                                         },
                                         use_container_width = True
-)   
+) 
 
 #############
 # functions #
