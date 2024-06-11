@@ -161,7 +161,6 @@ if crawl_csv is not None:
                                                                  width = "medium"),
                                         } )
                 
-                st.write(type(max_title_px))
 
             with col_2:
 
@@ -190,7 +189,6 @@ if crawl_csv is not None:
                                             )
                                         } )
                 
-                description_data.dtypes
 
     with url_tab:
         with st.container():
