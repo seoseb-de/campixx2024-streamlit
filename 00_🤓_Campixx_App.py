@@ -1,6 +1,6 @@
 #####
 #
-# Work in Progress
+# Hallo Seolinis!
 #
 ####
 
@@ -27,26 +27,33 @@ with st.sidebar:
 # variables #
 #############
 
-
+download_landingpage = 'https://www.reachx.de/'
 
 ##################
 # layout the app #
 ##################
 
-st.title('![@seoseb](https://www.seoseb.de/img/seoseb_icon_x48.png) Vorraussetzungen')
-st.markdown('Stuff going here')
+st.title('![@seoseb](https://www.seoseb.de/img/seoseb_icon_x48.png) Campixx 2024')
+st.markdown('Hier sind die Beispiele aus der Campixx Session vom 14.06.2024 gesammelt.')
 
 with st.container():
 
     col_1, col_2 = st.columns(2, gap='large')
 
     with col_1:
-        st.subheader('Anaconda :snake:')
-        st.image('https://upload.wikimedia.org/wikipedia/en/c/cd/Anaconda_Logo.png', use_column_width=True)
+        st.subheader('Slides')
+        st.markdown('''
+                    Die Slides erhältst Du hier:
+                    ''')
+        st.link_button(label = 'Slides herunterladen', url = download_landingpage)
                
     with col_2:
-        st.subheader('Streamlit :balloon:')
-        st.image('https://streamlit.io/images/brand/streamlit-mark-color.png', use_column_width=True)
+        st.subheader('Beispiele')
+
+        st.page_link('pages/01_🎈_minimal-App.py', label = 'Minimalbeispiel', icon = '🎈' )
+        st.page_link('pages/02_🤖_Bot-IP_Beispiel.py', label = 'Bot-IPs laden', icon = '🤖' )
+        st.page_link('pages/03_📈_Viisualisations.py', label = 'Crawl-Analysen', icon = '📈' )
+        st.page_link('pages/05_🔖_Quellen.py', label = 'Quellen & Doku', icon = '🔖' )
 
     st.markdown('---')
 
@@ -57,7 +64,7 @@ with st.container():
 st.markdown('---')
 
 with st.container():
-    st.markdown('Campixx 2021 🇩🇪')
+    st.markdown('Campixx 2024 🇩🇪')
     st.markdown('''
     - [Speaker-Profil](https://www.campixx.de/speaker/sebastian-adler/)
     - [Xpath für SEO](https://www.seoseb.de/artikel/texte/xpath-fur-seo-ein-einstieg)
