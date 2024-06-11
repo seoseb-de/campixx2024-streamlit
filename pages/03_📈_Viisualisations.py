@@ -145,7 +145,7 @@ if crawl_csv is not None:
 
                 st.markdown('#### URLs mit zu breiten Titles')
 
-                max_title_px = crawl_df[crawl_df['Status-Code'] == 200]['Pixelbreite von Titel 1'].max()
+                max_title_px = int(crawl_df[crawl_df['Status-Code'] == 200]['Pixelbreite von Titel 1'].max())
                 
                 title_limit = st.slider('Ab wann sind Titles zu breit?', 0, max_title_px, value = 512, format = '%d px', help = 'das Empfohlene Maximum liegt bei 512 px.')
 
