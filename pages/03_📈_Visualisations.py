@@ -151,6 +151,7 @@ if crawl_csv is not None:
 
                 title_data = crawl_df[(crawl_df['Status-Code'] == 200) & (crawl_df['Pixelbreite von Titel 1'] > title_limit )][['Pixelbreite von Titel 1', 'Titel 1', 'Adresse']].sort_values(by=['Pixelbreite von Titel 1'], ascending = False)
                 
+                st.write(f'{len(title_data.index)} URLs mit zu breiten Titeln')
 
                 st.dataframe(title_data, hide_index = True, column_config={
                         "Pixelbreite von Titel 1": st.column_config.ProgressColumn("Pixelbreite von Titel 1",  
@@ -161,7 +162,6 @@ if crawl_csv is not None:
                                                                  width = "medium"),
                                         } )
                 
-
             with col_2:
 
                 st.subheader('Description Länge')
@@ -174,7 +174,8 @@ if crawl_csv is not None:
                 description_limit = st.slider('Ab wann sind Descriptions zu breit?', 0, max_description_px, value = 920, format = '%d px', help = 'das Empfohlene Maximum liegt bei 920 px.')
 
                 description_data = crawl_df[(crawl_df['Status-Code'] == 200) & (crawl_df['Pixelbreite von Meta Description 1'] > description_limit )][['Pixelbreite von Meta Description 1', 'Meta Description 1', 'Adresse']].sort_values(by=['Pixelbreite von Meta Description 1'], ascending = False)
-                
+
+                st.write(f'{len(description_data.index)} URLs mit zu breiten Descriptions')                
 
                 st.dataframe(description_data, hide_index = True, column_config={
                         "Pixelbreite von Meta Description 1" : st.column_config.ProgressColumn("Pixelbreite von Meta Description 1",  
@@ -189,7 +190,6 @@ if crawl_csv is not None:
                                             )
                                         } )
                 
-
     with url_tab:
         with st.container():
 
