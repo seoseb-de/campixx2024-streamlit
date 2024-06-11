@@ -153,10 +153,11 @@ if crawl_csv is not None:
                 
 
                 st.dataframe(title_data, hide_index = True, column_config={
-                        "Pixelbreite von Titel 1": st.column_config.ProgressColumn("Pixelbreite von Titel 1",  
+                        "Pixelbreite von Titel 1": st.column_config.ProgressColumn("Pixelbreite Seitentitel",  
                                                                  help="Pixelbreite des Titles",
                                                                  format="%d px",
-                                                                 min_value=0,
+                                                                 min_value=0,                                                                                   
+                                                                 max_value=max_title_px,
                                                                  width = "medium"),
                                         })
 
