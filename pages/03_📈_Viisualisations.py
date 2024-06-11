@@ -150,18 +150,18 @@ if crawl_csv is not None:
                 title_limit = st.slider('Ab wann sind Titles zu breit?', 0, max_title_px, value = 512, format = '%d px', help = 'das Empfohlene Maximum liegt bei 512 px.')
 
                 title_data = crawl_df[(crawl_df['Status-Code'] == 200) & (crawl_df['Pixelbreite von Titel 1'] > title_limit )][['Pixelbreite von Titel 1', 'Titel 1', 'Adresse']].sort_values(by=['Pixelbreite von Titel 1'], ascending = False)
-
-                st.write(type(max_title_px))
-
+                
 
                 st.dataframe(title_data, hide_index = True, column_config={
-                        "Pixelbreite von Titel 1": st.column_config.ProgressColumn("Pixelbreite Seitentitel",  
+                        "Pixelbreite von Titel 1": st.column_config.ProgressColumn("Pixelbreite von Titel 1",  
                                                                  help="Pixelbreite des Titles",
                                                                  format="%d px",
-                                                                 min_value=0,                                                                                   
+                                                                 min_value=0,
                                                                  max_value=int(max_title_px),
                                                                  width = "medium"),
-                                        })
+                                        } )
+                
+                st.write(type(max_title_px))
 
             with col_2:
 
@@ -182,13 +182,15 @@ if crawl_csv is not None:
                                                                  help="Pixelbreite des Titles",
                                                                  format="%d px",
                                                                  min_value=0,
-                                                                 max_value=max_description_px,
+                                                                 max_value=int(max_description_px),
                                                                  width = "medium"),
                         "Meta Description 1" : st.column_config.TextColumn(
                                                 help = "Meta Description",
                                                 width = "large"
                                             )
                                         } )
+                
+                description_data.dtypes
 
     with url_tab:
         with st.container():
@@ -243,7 +245,7 @@ if crawl_csv is not None:
                                                                  format="%d",
                                                                  width = "medium",
                                                                  min_value = 0,
-                                                                 max_value = status_code_zusammenfassung['Adresse'].max())
+                                                                 max_value = int(status_code_zusammenfassung['Adresse'].max()))
                                         })
 
                 st.divider()
