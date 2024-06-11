@@ -152,7 +152,7 @@ if crawl_csv is not None:
                 title_data = crawl_df[(crawl_df['Status-Code'] == 200) & (crawl_df['Pixelbreite von Titel 1'] > title_limit )][['Pixelbreite von Titel 1', 'Titel 1', 'Adresse']].sort_values(by=['Pixelbreite von Titel 1'], ascending = False)
                 
 
-                st.dataframe(title_data, hide_index = True, , column_config={
+                st.dataframe(title_data, hide_index = True, column_config={
                         "Pixelbreite von Titel 1": st.column_config.ProgressColumn("Pixelbreite von Titel 1",  
                                                                  help="Pixelbreite des Titles",
                                                                  format="%d px",
