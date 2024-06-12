@@ -48,6 +48,19 @@ df_co2 = connection.query(sql = sql)
 max_co2 = df_co2['CO₂ (mg)'].max()
 min_co2 = 0
 
+st.markdown('Tabelle erstellt mit:')
+st.code(''
+        SELECT 
+            "Adresse",
+            "CO₂ (mg)",
+        FROM
+            crawl_data
+        WHERE
+            "Status-Code" == 200
+        ORDER BY 
+            "CO₂ (mg)" Desc;
+        ''')
+        
 st.dataframe(df_co2, column_config={
                         "CO₂ (mg)": st.column_config.ProgressColumn("CO₂ Footprint",  
                                                                  help="CO₂ Footprint der URL - errechnet vom Screaming Frog",
