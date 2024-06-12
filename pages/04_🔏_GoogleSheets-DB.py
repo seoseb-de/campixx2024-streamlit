@@ -22,7 +22,7 @@ sheet_quelle = connection.read(worksheet = 'crawl_data', usecols = ['Adresse', '
 ##################
 
 st.title('![@seoseb](https://www.seoseb.de/img/seoseb_icon_x48.png) Campixx 2024 - App auf Google-Sheets aufsetzen')
-st.markdown('Diese App ')
+st.markdown('Diese App verwendet ein privates Google Sheets Dokument als Datenquelle')
 
 st.subheader('Hier ist unser Sheet')
 
