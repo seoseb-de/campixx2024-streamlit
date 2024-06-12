@@ -32,13 +32,15 @@ with st.expander('Anleitung', expanded=False):
         st.subheader('Export erzeugen')
         st.markdown('''
                     1. Crawl abschließen
-                    1. Crrawlanalyse durchführen
                     1. Pagespeed-API Daten abholen
                     1. GSC-API Daten abholen
+                    1. Crawlanalyse durchführen
 
                     _dann:_
 
-                    Im Tab "Intern" HTML-Dokumente wählen und den "Export" Button drücken.''')
+                    Im Tab "Intern" HTML-Dokumente wählen und den "Export" Button drücken.
+                    
+                    Das Tool erkennt aktuell nur Exporte mit Deutschen Spaltentiteln''')
     
     with col_2:
         st.subheader('Screens')
