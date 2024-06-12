@@ -40,7 +40,7 @@ with st.expander('Anleitung', expanded=False):
 
                     Im Tab "Intern" HTML-Dokumente wählen und den "Export" Button drücken.
                     
-                    Das Tool erkennt aktuell nur Exporte mit Deutschen Spaltentiteln''')
+                    Das Tool erkennt aktuell nur Exporte mit deutschen Spaltentiteln''')
     
     with col_2:
         st.subheader('Screens')
