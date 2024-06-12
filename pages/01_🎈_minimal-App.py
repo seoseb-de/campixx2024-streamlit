@@ -1,6 +1,6 @@
 import streamlit as st 
 
-with st.echo(code_location = 'below'):
+with st.echo(code_location = 'below', line_numbers = True):
 
     st.title('Hallo Campixx! 👋')
 
