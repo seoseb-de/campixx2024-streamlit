@@ -49,7 +49,7 @@ max_co2 = df_co2['CO₂ (mg)'].max()
 min_co2 = 0
 
 with st.expander('Tabelle erstellt mit:', expanded = False):
-st.code(sql, 'sql', line_numbers = True)
+    st.code(sql, 'sql', line_numbers = True)
         
 st.dataframe(df_co2, column_config={
                         "CO₂ (mg)": st.column_config.ProgressColumn("CO₂ Footprint",  
