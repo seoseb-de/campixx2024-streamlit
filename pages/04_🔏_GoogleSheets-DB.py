@@ -51,7 +51,7 @@ min_co2 = 0
 with st.expander('Tabelle erstellt mit:', expanded = False):
     st.code(sql, 'sql', line_numbers = True)
         
-st.dataframe(df_co2, column_config={
+st.dataframe(df_co2, hide_index = True, column_config={
                         "CO₂ (mg)": st.column_config.ProgressColumn("CO₂ Footprint",  
                                                                  help="CO₂ Footprint der URL - errechnet vom Screaming Frog",
                                                                  format="%d mg",
