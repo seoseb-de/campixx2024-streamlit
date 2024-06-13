@@ -27,7 +27,7 @@ with st.sidebar:
 # variables #
 #############
 
-download_landingpage = 'https://www.reachx.de/'
+download_landingpage = 'https://ressourcen.reachx.de/konfetti-und-ballons'
 
 ##################
 # layout the app #
