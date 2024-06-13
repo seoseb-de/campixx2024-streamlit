@@ -20,7 +20,7 @@ st.set_page_config(
 with st.sidebar:
     
     st.title('Sidebar Stuff')
-    st.caption('Work in progress…')
+    st.caption('Demo-Apps und Ressourcen des Campixxx Vortrags vom 14.06.2024')
     st.markdown('_fiddled by [seoseb](https://www.seoseb.de) | [@seoseb](https://seocommunity.social/@seoseb)_')
 
 #############
