@@ -56,7 +56,7 @@ with st.container():
         st.page_link('pages/05_🔖_Quellen.py', label = 'Quellen & Doku', icon = '🔖' )
 
     st.divider()
-st.markdown('Kevon von Claneo hat auf der Campixx einen Vortrag mit Anwendungsbeispielen gehalten:')
+st.markdown('Kevin von Claneo hat auf der Campixx einen Vortrag mit Anwendungsbeispielen gehalten:')
 st.page_link('https://bit.ly/m/kevin-claneo', label = 'Anwendungs-Inspirationen', icon = 'ℹ️' )
 
 
