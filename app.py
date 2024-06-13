@@ -55,7 +55,10 @@ with st.container():
         st.page_link('pages/03_📈_Visualisations.py', label = 'Crawl-Analysen', icon = '📈' )
         st.page_link('pages/05_🔖_Quellen.py', label = 'Quellen & Doku', icon = '🔖' )
 
-    st.markdown('---')
+    st.divider()
+
+st.page_link('https://bit.ly/m/kevin-claneo', label = 'Anwendungs-Inspirationen', icon = 'ℹ️' )
+
 
 ##########
 # footer #
