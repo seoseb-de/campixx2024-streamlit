@@ -17,7 +17,7 @@ with st.sidebar:
     
     st.title('Was siehst Du hier?')
     st.markdown('''
-                Diese App demonstriert einfach Aufbereitungs- und
+                Diese App demonstriert einfache Aufbereitungs- und
                 Visualisierungsmöglichkeiten für Crawl-Exporte.
                 Als Datenquelle dient eine CSV (eine Dummy-Datei ist verfügbar).
                 In den einzelnen Tabs werden Informationen zu verschiedenen
