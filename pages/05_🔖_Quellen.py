@@ -70,6 +70,7 @@ with st.expander(label = 'SEO related'):
 
     st.markdown('''
                 ### Streamlit Apps
+                * [Charly Wargniers App Collection](https://www.charlywargnier.com/my-public-web-apps)
                 * [Search Console Connector](https://search-console-connector.streamlit.app/)
                 * [SEO Data Blender](https://dethfire-python-seo-streamlit-data-blend-l4ywic.streamlit.app/)
                 
