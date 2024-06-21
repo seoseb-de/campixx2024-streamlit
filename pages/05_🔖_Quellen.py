@@ -73,6 +73,9 @@ with st.expander(label = 'SEO related'):
                 * [Charly Wargniers App Collection](https://www.charlywargnier.com/my-public-web-apps)
                 * [Search Console Connector](https://search-console-connector.streamlit.app/)
                 * [SEO Data Blender](https://dethfire-python-seo-streamlit-data-blend-l4ywic.streamlit.app/)
+
+                ### Python for SEO
+                * [Jean-Christophe Chouinards 'Python for SEO: Complete Guide')](https://www.jcchouinard.com/python-for-seo/)
                 
                 #### Artikel
                 * [Using Python + Streamlit To Find Striking Distance Keyword Opportunities](https://www.searchenginejournal.com/python-seo-striking-distance/423009/)
