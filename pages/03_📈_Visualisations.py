@@ -49,7 +49,9 @@ with st.expander('Anleitung', expanded=False):
 crawl_csv =  st.file_uploader(label=':frog: Crawl-Export hochladen', type='csv', help='Hier kannst du deine Crawl-Export-CSV hochladen.')
 
 st.markdown('Du kannst auch diese beispiel datei verwenden:')
-st.download_button(data = '../assets/campix.de_intern_alle_fake-gsc.csv')
+
+with open('../assets/campix.de_intern_alle_fake-gsc.csv') as f:
+    st.download_button('Beispieldaten herunterladen', f)
 
 if crawl_csv is not None:
     # read csv to pandas dataframe
