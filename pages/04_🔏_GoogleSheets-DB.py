@@ -21,12 +21,12 @@ with st.sidebar:
     
     st.title('Sidebar Stuff')
     st.markdown('''
-                Diese App veranschaulicht die Verbindung zu
+                Diese App demonstriert die Verbindung zu
                 einem privaten Google-Sheets-Tabellendokument als Datenquelle.
                 Das Praktische bei dieser Verbindung ist, dass die Datenquelle
-                mit SQL angeesprochen werden kann.
+                mit SQL angesprochen werden kann.
                 Die Verbindungsinformationen liegen in den App-Secrets.
-                Der Zugriff wird über einen Googel-Cloud-Service-Account gereglt,
+                Der Zugriff wird über einen Googel-Cloud-Service-Account geregelt,
                 mit dem das Sheet geteilt wurde.''')
     st.markdown('_fiddled by [seoseb](https://www.seoseb.de) | [@seoseb](https://seocommunity.social/@seoseb)_')
 
