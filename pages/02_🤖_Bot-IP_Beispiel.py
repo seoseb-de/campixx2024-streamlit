@@ -21,6 +21,16 @@ st.set_page_config(
     initial_sidebar_state='expanded'
 )
 
+with st.sidebar:
+    
+    st.title('Was siehst Du hier?')
+    st.markdown('''
+                Diese App zeigt die Vorzüge einer Web-Applikation
+                im Vergleich zu dem zugrunde liegenden Jupyter-/Colab-Notebook.''')
+    st.markdown('_fiddled by [seoseb](https://www.seoseb.de) | [@seoseb](https://seocommunity.social/@seoseb)_')
+
+
+
 
 ##################
 # layout the app #
