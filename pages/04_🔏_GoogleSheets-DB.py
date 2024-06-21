@@ -19,7 +19,7 @@ sheet_quelle = connection.read(worksheet = 'crawl_data', usecols = ['Adresse', '
 
 with st.sidebar:
     
-    st.title('Sidebar Stuff')
+    st.title('Was siehst Du hier?')
     st.markdown('''
                 Diese App demonstriert die Verbindung zu
                 einem privaten Google-Sheets-Tabellendokument als Datenquelle.
