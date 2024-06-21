@@ -48,7 +48,7 @@ with st.expander('Anleitung', expanded=False):
 
 crawl_csv =  st.file_uploader(label=':frog: Crawl-Export hochladen', type='csv', help='Hier kannst du deine Crawl-Export-CSV hochladen.')
 
-st.markdown('Du kannst auch diese beispiel datei verwenden:')
+st.markdown('Du kannst auch diese Beispiel-Datei verwenden:')
 
 with open('./assets/campix.de_intern_alle_fake-gsc.csv') as f:
     st.download_button(label = 'Beispieldaten herunterladen', data = f, file_name = 'beispiel-crawl.csv', mime = 'text/csv')
