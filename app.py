@@ -28,6 +28,7 @@ with st.sidebar:
 #############
 
 download_landingpage = 'https://ressourcen.reachx.de/konfetti-und-ballons'
+download_app_template = 'https://www.seoseb.de/labor/streamlit-app-template.zip'
 
 ##################
 # layout the app #
@@ -46,6 +47,13 @@ with st.container():
                     Die Slides erhältst Du hier:
                     ''')
         st.link_button(label = 'Slides herunterladen', url = download_landingpage)
+
+    
+        st.subheader('App-Template')
+        st.markdown('''
+                    Eine Vorlage für Multipage-Apps als ZIP-File gibts hier:
+                    ''')
+        st.link_button(label = 'Template herunterladen (ZIP-File)', url = download_app_template)
                
     with col_2:
         st.subheader('Beispiele')
