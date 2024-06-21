@@ -13,7 +13,7 @@ st.set_page_config(
 
 with st.sidebar:
     
-    st.title('Sidebar Stuff')
+    st.title('Was siehst Du hier?')
     st.markdown('''
                 Hier sind die Quellen gesammelt, 
                 die ich für meine Session und die Beispiel-Anwendungen 
