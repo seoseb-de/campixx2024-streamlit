@@ -4,6 +4,6 @@ with st.echo(code_location = 'below'):
 
     st.title('Hallo Campixx! 👋')
 
-    if st.button('🎈 Ballons!'):
+    if st.button('🎈 Ballons!', type = 'primary'):
         st.balloons()
 
