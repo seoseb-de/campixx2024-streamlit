@@ -13,6 +13,16 @@ st.set_page_config(
     initial_sidebar_state='expanded'
 )
 
+with st.sidebar:
+    
+    st.title('Was siehst Du hier?')
+    st.markdown('''
+                Diese App demonstriert einfach Aufbereitungs- und
+                Visualisierungsmöglichkeiten für Crawl-Exporte.
+                Als Datenquelle dient eine CSV (eine Dummy-Datei ist verfügbar).
+                In den einzelnen Tabs werden Informationen zu verschiedenen
+                Daten aus dem Crawl dargestellt.''')
+    st.markdown('_fiddled by [seoseb](https://www.seoseb.de) | [@seoseb](https://seocommunity.social/@seoseb)_')
 
 ##################
 # layout the app #
