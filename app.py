@@ -20,7 +20,7 @@ st.set_page_config(
 with st.sidebar:
     
     st.title('Sidebar Stuff')
-    st.markdown('Demo-Apps und Ressourcen des Campixxx Vortrags [https://app.campixx.de/item/konfetti-und-ballons-statt-cod](https://app.campixx.de/item/konfetti-und-ballons-statt-cod) vom 14.06.2024')
+    st.markdown('Demo-Apps und Ressourcen des Campixxx Vortrags [»Konfetti und Ballons statt Code-Cells und Dataframes«](https://app.campixx.de/item/konfetti-und-ballons-statt-cod) vom 14.06.2024')
     st.markdown('_fiddled by [seoseb](https://www.seoseb.de) | [@seoseb](https://seocommunity.social/@seoseb)_')
 
 #############
