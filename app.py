@@ -27,7 +27,7 @@ with st.sidebar:
 # variables #
 #############
 
-download_landingpage = 'https://ressourcen.reachx.de/konfetti-und-ballons'
+download_landingpage = 'https://ressourcen.reachx.de/konfetti-und-ballons?utm_source=seoseb-app'
 download_app_template = 'https://www.seoseb.de/labor/streamlit-app-template.zip'
 
 ##################
