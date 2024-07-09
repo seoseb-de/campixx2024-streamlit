@@ -37,6 +37,9 @@ download_app_template = 'https://www.seoseb.de/labor/streamlit-app-template.zip'
 st.title('![@seoseb](https://www.seoseb.de/img/seoseb_icon_x48.png) Campixx 2024')
 st.markdown('Hier sind die Beispiele aus der Campixx Session vom 14.06.2024 gesammelt.')
 
+st.info('''Aufgrund eines Kompatibilitätsproblems musste auf eine NumPy-Version < 2.0.0 umgestellt werden. 
+Das sollte keine Auswirkungen auf die Funktion der App haben, wurde aber nicht ausführlich getestet.''')
+
 with st.container():
 
     col_1, col_2 = st.columns(2, gap='large')
