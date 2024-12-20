@@ -63,7 +63,8 @@ with st.container():
 
         st.page_link('pages/01_🎈_minimal-App.py', label = 'Minimalbeispiel', icon = '🎈' )
         st.page_link('pages/02_🤖_Bot-IP_Beispiel.py', label = 'Bot-IPs laden', icon = '🤖' )
-        st.page_link('pages/03_📈_Visualisations.py', label = 'Crawl-Analysen', icon = '📈' )
+        st.page_link('pages/03_📈_Visualisations.py', label = 'Crawl-Analysen', icon = '📈' )        
+        st.page_link('pages/04_🔐_GoogleSheets-DB.py', label = 'Google Sheets als Datenquelle', icon = '🔐' )
         st.page_link('pages/05_🔖_Quellen.py', label = 'Quellen & Doku', icon = '🔖' )
 
     st.divider()
